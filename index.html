@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Assets/CSS/style.css">
     <!-- Favicon -->
@@ -35,41 +36,61 @@
     </header>
     <!-- End Navigation -->
 
-    <!-- Hero/Jumbotron -->
-    <section class="hero"></section>
-
-    <!-- About Me Section -->
-    <section id="about-me" class="about-me">
-        <div class="flex-row">
+    <!-- "About Me" Section -->
+    <section id="about-me" class="about">
+        <h2>About Me</h2>
+        <article class="bio">
             <img src="./Assets/Images/me.jpg" class="float-left" />
-            <h2 class="section-title primary-border">Hi! I'm Jessica</h2>
-        </div>
-        <div class="flex-row">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Veritatis quam laborum dolorum sint. Neque est a numquam.
-                Nulla aliquam dolore, aspernatur a ipsa, nisi voluptates
-                beatae illum ad eveniet reiciendis?
+            <p>Hi, I'm Jessica (or Jess)! Thank you for taking the time to check
+                out my portfolio. I am a newly-minted full stack web
+                developer who loves a challenge and learning new things.
+                A bit more about me: I am a communications professional
+                with work experience in the legal field, an avid reader, 
+                lover of running and barre workouts, and am a shamelessly 
+                obsessed cat mom to a furry sweetheart named Cedar! Long story short, 
+                I wanted to pivot and make a career change, and here I am! 
+                <br/>
+                <br/>
+                Please feel free to click around and check out my work! And if you 
+                have any comments, questions, or just want to say hi, you can find my 
+                contact information below! Thank you for being here!
+                <br/>
             </p>
+        </article>
+    </section>
+    <!-- End "About Me" Section -->
+
+    <!-- "My Work" Section -->
+    <section id="my-work" class="work">
+        <h2>Check Out My Work</h2>
+        <div class="projects">
+            <div class="first-project">
+                <a href="https://xxundeadxxdemon.github.io/movie-night/">
+                    <img src="Assets/Images/movie-night.png" />
+                    <h3>Movie Night</h3>
+                </a>
+            </div>
+            <div class="other-projects">
+                <div class="project-2">
+                    <a href="https://dashboard.heroku.com/apps/hearthstone-reviewer">
+                        <img src="Assets/Images/"/>
+                    </a>
+                    <h3>Hearthstone Reviewer</h3>
+                </div>
+                <div class="project-3">
+                    <a href="link/">
+                        <img src="Assets/Images/" />
+                    </a>
+                    <h3>Project 3 TBD</h3>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- End About Me Section -->
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="flex-row">
-            <h2 class="section title secondary-border">Check Out My Work</h2>
-        </div>
-
-        <div class="run-buddy">
-            <article class="run-buddy"></article>
-            <a href="https://jessicaakelley.github.io/run-buddy/">
-                <img src="./Assets/Images/run-buddy.png" alt="Run-Buddy" style="width:100%;">
-        </div>
-    </section>
+    <!-- End "My Work" -->
 
     <!-- Contact Section -->
     <section id="contact-info" class="contact">
-        <h2 class="section-title secondary border">Let's Connect!</h2>
+        <h2>Let's Connect!</h2>
         <ul>
             <li>
                 Email: <a href="mailto:kelleyajessica@gmail.com">kelleyajessica@gmail.com</a>
@@ -85,15 +106,7 @@
             </li>
         </ul>
     </section>
+    <!-- End "Contact" -->
 
-    <!-- Footer -->
-    <footer>
-        <h2>Made by Jessica Kelley</h2>
-        <div>
-            &copy; 2021 Jessica Kelley
-        </div>
-    </footer>
-    <!-- End Footer -->
-</body>
-
+    </body>
 </html>

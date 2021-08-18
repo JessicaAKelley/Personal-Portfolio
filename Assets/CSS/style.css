@@ -1,44 +1,46 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --tertiary-color: #636b6e;
+  --background-color: #ffffff;
+}
+
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: black;
+  background-color: var(--primary-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Apply Styles to Header */
-header {
-  padding: 20px 35px;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}
-
-header h1 {
-  font-weight: bold;
-  font-size: 60px;
-  color: black;
-  margin: 0;
-}
-
-header a {
-  color: black;
+a:hover,
+a:visited,
+a:link,
+a:active {
   text-decoration: none;
 }
 
-header nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 35px;
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Heading styles start */
+header {
+  padding: 25px 35px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 36px;
 }
 
 header nav ul {
@@ -49,111 +51,240 @@ header nav ul {
   list-style: none;
 }
 
+header nav ul li {
+  margin: 10px;
+}
+
 header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 36px;
-  text-shadow: 0 0 10px black;
+  color: white;
 }
 
-header nav ul li a:hover {
-  background: grey;
-  color: black;
-  border-radius: 36px;
-  text-shadow: none;
-}
-/* End Header Styles */
+/*Heading styles end */
 
-/* Apply Styles to Hero */
-.hero {
-  height: 600px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url(../Images/website\ development-min.jpeg);
-  background-size: cover;
+/* About section styles start */
+.about {
+  margin: auto;
+  width: 600px;
+  padding: 10px;
+}
+
+.about h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.bio {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 80%;
+  align-items: center;
 }
-/* Hero Styles End */
 
-.about-me,
-.projects,
-.contact {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: black;
-  color: white;
-  font-size: 30px;
+.bio p {
+  margin-left: 20px;
   text-align: center;
 }
 
-.about-me img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-  float: left;
+.bio img {
+  width: 20%;
+  border-radius: 5%;
+  width: 300px;
+}
+/* About section styles end */
+
+/* My Work styles start */
+.projects {
+  margin: 20px;
+}
+.projects h2 {
+  text-align: center;
+  margin: 20px;
 }
 
-.projects img {
-  display: block;
-  margin: 50px auto;
-  max-width: 500px;
-}
-
-.text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Apple Styles to Contact Section */
-
-.contact h2 {
-  color: white;
-  line-height: 1.5;
-}
-
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-info div {
-  color: purple;
-}
-
-.contact-info p {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
-}
-
-/* Apply Styles to Footer */
-footer {
-  background: black;
+.pro .projects {
   width: 100%;
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-footer h2,
-footer div {
+.work .projects .first-project {
+  width: 600px;
+  height: 400px;
+  margin: 10px auto;
+}
+
+.work .projects .first-project img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+  border-radius: 5%;
+}
+
+.work .projects .first-project a h3 {
+  color: var(--primary-color);
+  font-size: 32px;
+  padding: 10px;
+  width: 200px;
+  background-color: var(--tertiary-color);
+  position: relative;
+  top: 200px;
+  z-index: 1;
+}
+
+.work .projects .first-project:hover,
+.work .projects .other-projects .project2:hover,
+.work .projects .other-projects .project3:hover {
+  opacity: 0.5;
+}
+
+.work .projects .other-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work .projects .other-projects img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+  border-radius: 5%;
+}
+
+.work .projects .other-projects h3 {
+  color: var(--primary-color);
+  font-size: 25px;
+  padding: 5px;
+  width: 150px;
+  background-color: var(--tertiary-color);
+  position: relative;
+  top: 100px;
+}
+
+.work .projects .other-projects .project-2 {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  margin-right: 5px;
+  border-radius: 5%;
+}
+
+.work .projects .other-projects .project-3 {
+  width: 300px;
+  height: 200px;
+  background-image: url("../images/placeholder2.jpg");
+  background-size: cover;
+  border-radius: 5%;
+}
+/*My Work styles end*/
+
+/*Contact styles start*/
+.contact {
+  background-color: var(--secondary-color);
+  padding: 25px 35px;
   color: white;
-  font-size: 15px;
-  margin: 0;
-  float: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact ul li {
+  margin: 10px;
+  list-style: none;
+}
+
+.contact ul li a {
+  color: var(--primary-color);
+}
+
+/* Contact section end */
+
+/* Media Query for tablets and smaller */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 35px;
+  }
+
+  header ul li {
+    font-size: 25px;
+  }
+
+  .contact {
+    justify-content: center;
+  }
+
+  .contact h2 {
+    margin: auto;
+  }
+
+  .about .bio {
+    font-size: large;
+  }
+  .contact ul {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+  }
+}
+
+/* Media Query for Mobile phones and smaller */
+@media screen and (max-width: 605px) {
+  header {
+    justify-content: center;
+    width: 100%;
+  }
+
+  header ul li {
+    font-size: 20px;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .bio {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .bio p {
+    text-align: left;
+    margin: 10px;
+  }
+
+  .work .projects .first-project {
+    width: 100%;
+  }
+
+  .work .projects .first-project h3 {
+    width: 100%;
+  }
+
+  .work .projects .first-project img {
+    width: 90%;
+    object-position: right;
+  }
+
+  .work .projects .other-projects {
+    width: 100%;
+  }
+
+  .work .projects .other-projects .project2 {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact ul {
+    display: block;
+  }
 }
