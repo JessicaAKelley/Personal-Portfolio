@@ -28,7 +28,7 @@ h2 {
   text-align: center;
 }
 
-/* Heading styles start */
+/* Header styles start */
 header {
   padding: 25px 35px;
   background-color: var(--secondary-color);
@@ -58,14 +58,14 @@ header nav ul li {
 header nav ul li a {
   color: white;
 }
-
-/*Heading styles end */
+/*Header styles end */
 
 /* About section styles start */
 .about {
   margin: auto;
-  width: 600px;
+  width: 1000px;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 .about h2 {
@@ -92,26 +92,27 @@ header nav ul li a {
 /* About section styles end */
 
 /* My Work styles start */
-.projects {
+.work {
   margin: 20px;
 }
-.projects h2 {
+
+.work h2 {
   text-align: center;
   margin: 20px;
 }
 
-.pro .projects {
+.work .projects {
   width: 100%;
 }
 
 .work .projects .first-project {
-  width: 600px;
+  width: 800px;
   height: 400px;
   margin: 10px auto;
 }
 
 .work .projects .first-project img {
-  width: 600px;
+  width: 800px;
   height: 400px;
   object-fit: cover;
   z-index: 0;
@@ -121,18 +122,19 @@ header nav ul li a {
 
 .work .projects .first-project a h3 {
   color: var(--primary-color);
-  font-size: 32px;
+  font-size: 20px;
   padding: 10px;
   width: 200px;
+  text-align: center;
   background-color: var(--tertiary-color);
   position: relative;
-  top: 200px;
+  top: 350px;
   z-index: 1;
 }
 
 .work .projects .first-project:hover,
-.work .projects .other-projects .project2:hover,
-.work .projects .other-projects .project3:hover {
+.work .projects .other-projects .project-2:hover,
+.work .projects .other-projects .project-3:hover {
   opacity: 0.5;
 }
 
@@ -140,11 +142,12 @@ header nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .work .projects .other-projects img {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   z-index: 0;
   position: absolute;
@@ -153,27 +156,28 @@ header nav ul li a {
 
 .work .projects .other-projects h3 {
   color: var(--primary-color);
-  font-size: 25px;
-  padding: 5px;
+  font-size: 20px;
+  padding: 10px;
   width: 150px;
+  text-align: center;
   background-color: var(--tertiary-color);
   position: relative;
-  top: 100px;
+  top: 350px;
 }
 
 .work .projects .other-projects .project-2 {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-size: cover;
   margin-right: 5px;
   border-radius: 5%;
 }
 
 .work .projects .other-projects .project-3 {
-  width: 300px;
-  height: 200px;
-  background-image: url("../images/placeholder2.jpg");
+  width: 400px;
+  height: 400px;
   background-size: cover;
+  margin-right: 5px;
   border-radius: 5%;
 }
 /*My Work styles end*/
@@ -200,8 +204,7 @@ header nav ul li a {
 .contact ul li a {
   color: var(--primary-color);
 }
-
-/* Contact section end */
+/* Contact style section end */
 
 /* Media Query for tablets and smaller */
 @media screen and (max-width: 768px) {
@@ -274,7 +277,7 @@ header nav ul li a {
     width: 100%;
   }
 
-  .work .projects .other-projects .project2 {
+  .work .projects .other-projects .project-2 .project-3 {
     margin-bottom: 10px;
   }
 
